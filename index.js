@@ -1,12 +1,19 @@
 module.exports.cardValidator = function cardValidator(card) {
+
+  if (typeof card === 'undefined') {
+    throw new RangeError('O argumento está vazio')
+  }
   if (typeof card !== 'number'){
     throw new TypeError('O argumento deve ser um número')
   }
-  card = (card).toString(10).split("").map(Number)
- 
-  if (card.length <14) {
-    throw new RangeError('não há números suficiente')
+  if (card.length == Number) {
+    if (card.length === 1 || card.length <14){
+      throw new Error('não há números suficiente')
+    }
   }
+
+  card = (card).toString(10).split("").map(Number)
+
   let digits = card.reverse();
   for (let i = 1; i < digits.length; i +=2){
     digits[i] *= 2;

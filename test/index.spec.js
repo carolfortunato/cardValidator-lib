@@ -4,18 +4,24 @@ const card = require("../index");
 const expect = chai.expect;
 
 describe("validCard", function() {
-
-  describe("when the parameter is a string", function() {
+  describe("when there is no parameter", function() {
     it("should return an error", function() {
-      expect(card.cardValidator('oi')).to.be.an('error');
-      expect(card).to.throw(TypeError);
+      let empty = () => {card.cardValidator()}
+      expect(empty).to.throw('O argumento está vazio');
     });
   })
 
-  describe("when there is no parameter OR not enough digits in the number", function() {
+  describe("when the parameter is not a number", function() {
     it("should return an error", function() {
-      expect(card.cardValidator(36490106)).to.have.lengthOf.within(1, 14);
-      expect(card).to.throw(RangeError);
+      let notNumber = () => {card.cardValidator('oi')}
+      expect(notNumber).to.throw('O argumento deve ser um número');
+    });
+  })
+
+  describe("when there is not enough digits in the number", function() {
+    it("should return an error", function() {
+      let short = () => {card.cardValidator(23453456)}
+      expect(short).to.throw('não há números suficiente');
     });
   })
 
