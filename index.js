@@ -12,6 +12,7 @@ module.exports.cardValidator = function cardValidator(card) {
     }
   }
 
+  //criar uma nova variavel
   card = (card).toString(10).split("").map(Number)
 
   let digits = card.reverse();

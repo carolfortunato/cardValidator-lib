@@ -11,8 +11,8 @@ carValidator(card);
 Exemplo de Uso:
 ```
 $node
-> let card = require("cardValidator")
-> card(36490102462661); //true
+> let card = require("xuxu-cardvalidator")
+> card.cardValidator(36490102462661); //true
 
 ```
 
