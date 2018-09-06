@@ -20,7 +20,7 @@ describe("validCard", function() {
 
   describe("when there is not enough digits in the number", function() {
     it("should return an error", function() {
-      let short = () => {card.cardValidator(23453456)}
+      let short = () => {card.cardValidator(2)}
       expect(short).to.throw('não há números suficiente');
     });
   })
