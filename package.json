@@ -1,6 +1,6 @@
 {
   "name": "xuxu-cardvalidator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "library for credit card validation",
   "main": "index.js",
   "directories": {
