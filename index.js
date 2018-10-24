@@ -1,5 +1,4 @@
 module.exports.cardValidator = function cardValidator(card) {
-
   if (typeof card === 'undefined') {
     throw new RangeError('O argumento está vazio')
   }
