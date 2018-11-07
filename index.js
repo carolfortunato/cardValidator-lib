@@ -28,6 +28,6 @@ module.exports.cardValidator = function cardValidator(card) {
   } else if (add % 10 !== 0){
     return false
   }
-  }
-  // valor true - 36490102462661
-  //valor false - 36490106666666
+}
+// valor true - 36490102462661
+//valor false - 36490106666666
