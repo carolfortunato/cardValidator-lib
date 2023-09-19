@@ -8,9 +8,8 @@
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "eslint": "^5.5.0"
+    "mocha": "^10.2.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha"
   },
@@ -27,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/carolfortunato/cardValidator-lib/issues"
   },
-  "homepage": "https://github.com/carolfortunato/cardValidator-lib#readme"
+  "homepage": "https://github.com/carolfortunato/cardValidator-lib#readme",
+  "devDependencies": {
+    "eslint": "^8.49.0"
+  }
 }

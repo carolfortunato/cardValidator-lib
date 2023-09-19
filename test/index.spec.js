@@ -1,6 +1,6 @@
 const mocha = require("mocha");
 const chai = require("chai");
-const card = require("../index");
+const card = require('../index');
 const expect = chai.expect;
 
 describe("validCard", function() {
